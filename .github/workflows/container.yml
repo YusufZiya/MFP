@@ -1,12 +1,12 @@
-name: deploy-container
+name: container-deploy
 
 on:
   push:
-    branches:
-      - main
-      - master
+    branches: [main]
     paths:
-      - 'packages/container/**'
+      - "packages/container/**"
+  pull_request:
+    branches: [main]
 
 defaults:
   run:
